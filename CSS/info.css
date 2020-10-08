@@ -1,0 +1,229 @@
+/*---------------------------------------------
+
+Project:      zletin
+Version:      1.0
+color  :      dark   #2D333F
+              main   #F0424C
+            second   #EC7A81
+------------------------------------------------
+*/
+header .navbar-brand {
+    color: #2D333F !important;
+    margin: 0;
+    padding: 15px 0;
+    position: absolute;
+    right: 0px;
+    z-index: 22;
+
+    width: 100%;
+    text-align: center
+}
+.about:first-of-type{
+    padding-bottom: 30px;
+    padding-top: 30px
+}
+.about .row{
+    margin: 50px auto
+}
+.about .my-img{
+    margin-top: 0 !important
+}
+
+
+.about .rgh img {
+    width: 100%;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    border-radius: 10px
+}
+.about .about-content{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 300px
+}
+
+ul.coloring li{
+    color: #EC7A81;
+    margin: 5px 0px
+}
+
+
+/*-----------------------*/
+.panner{
+    height: 200px;
+    
+}
+.panner .row {
+    height: 150px;
+}
+
+
+
+
+
+/*----------------------------*/
+.accordion{
+    background-image: url(../images/4.jpeg);
+    background-size: cover;
+    background-attachment: fixed
+}
+.accordion h1{
+    margin-top: 0;
+    margin-bottom: 50px;
+    color: white
+}
+.det-flex{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+details{
+    width: 40%;
+    min-width: 400px;
+    margin: 5px 0
+}
+details summary{
+    margin-right: 20px;
+    background: #2D333F;
+    border-radius: 5px
+}
+details[open] summary ~ * {
+  animation: open .5s ease-in-out;
+}
+
+@keyframes open {
+  0%    {opacity: 0;}
+  100%  {opacity: 1;}
+}
+details summary::-webkit-details-marker{
+  display:none;
+}
+
+details summary{
+  width:100%;
+  padding:20px ;
+  position:relative;
+  cursor:pointer;
+  font-weight:300;
+  list-style: none;
+    color: white;
+    font-size: 16px
+}
+
+
+details summary:after {
+  content: "+"; 
+  color: #F0424C; 
+  position:absolute;
+  font-size:25px;
+  line-height:0;
+  margin-top:0.75rem;
+  right:-20px;
+  font-weight:900;
+  transform-origin:center;
+  transition: 200ms linear;
+    
+}
+details[open] summary:after {
+  transform: rotate(45deg);
+}
+details summary{
+  outline:0;
+}
+details p{
+    margin: 10px 0 !important;
+    margin-right: 20px !important;
+    color: white
+}
+
+
+.services {
+    border-bottom: none;
+    background-image: none;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-color: #f9f9f9 !important;
+    background: #f9f9f9 !important;
+    margin-bottom: 50px
+
+}
+.services .row{
+    margin: 0 auto
+}
+.services h1{
+    margin: 50px 0
+}
+.services:after{
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 0%;
+    width:0%;
+}
+
+.services .row .col-sm-6:nth-child(n+2) {
+    border-left: none
+
+}
+
+.services .row .col-sm-6 {
+    height: 100%;
+    padding: 25px 0;
+    cursor: pointer;
+    transition: .3s ease;
+    position: relative;
+    z-index: 2
+}
+
+.services .row .col-sm-6:hover {
+    background: rgba(0, 0, 0, 0)
+}
+
+.services .row .col-sm-6:hover p {
+    opacity: 1;
+    top: 0px;
+
+}
+
+.services .row .col-sm-6 h4 {
+    color: #1e1e1e; 
+}
+
+.services .row .col-sm-6 p {
+    line-height: 2;
+    font-size: 13px;
+    position: relative;
+    top: 20px;
+    opacity: 1;
+    transition: .8s ease;
+    color: #2D333F;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.services .row .col-sm-6 svg {
+    margin-bottom: 20px;
+    color: #FFF;
+    height: 60px;
+    border-radius: 50%;
+    line-height: 70px;
+    text-align: center;
+    font-size: 40px;
+    width: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #F0424C
+}

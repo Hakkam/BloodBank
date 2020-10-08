@@ -1,0 +1,70 @@
+/*---------------------------------------------
+
+Project:      zletin
+Version:      1.0
+color  :      dark   #2D333F
+              main   #F0424C
+            second   #EC7A81
+------------------------------------------------
+*/
+header {
+    height: 300px;
+    position: relative
+}
+
+header h1 {
+    font-size: 50px !important
+}
+
+header:after {
+    content: '';
+    background-image: url(../images/bg-section-cta-bottom-inside.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2222;
+    height: 50px;
+}
+
+
+.profile {
+    margin: 50px auto;
+    color: #2D333F;
+    position: relative
+}
+
+
+.profile .row .col-xs-12:not(.text-center) {
+    cursor: pointer;
+    transition: .5s ease-in-out
+}
+
+.profile .row .col-xs-12.col-xs-12:not(.text-center):hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, .1)
+}
+
+.detail {
+    position: absolute;
+    left: 0;
+}
+
+.detail ul {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between
+}
+
+.first .fixed {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px !important;
+}
+.first .fixed h4{
+    padding-bottom: 20px
+}

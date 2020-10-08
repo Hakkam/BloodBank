@@ -1,0 +1,64 @@
+/*---------------------------------------------
+
+Project:      zletin
+Version:      1.0
+color  :      dark   #2D333F
+              main   #F0424C
+            second   #EC7A81
+------------------------------------------------
+*/
+.frm {
+    padding: 50px 0
+}
+
+form {
+    margin-top: 0px
+}
+
+.ig div {
+    display: inline-block;
+    position: relative;
+
+}
+
+.ig div div {
+    position: absolute;
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 10px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+    border-radius: 50%;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    opacity: 0;
+    cursor: pointer;
+    transition: .4s ease-in-out
+}
+
+.ig div:hover div {
+    opacity: 1
+}
+
+.ig img {
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%
+}
+
+.change {
+    background: none;
+    color: #131313;
+    display: inline-block;
+    width: auto
+}

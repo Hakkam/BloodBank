@@ -1,0 +1,157 @@
+/*---------------------------------------------
+
+Project:      zletin
+Version:      1.0
+color  :      dark   #2D333F
+              main   #F0424C
+            second   #EC7A81
+------------------------------------------------
+*/
+/*--------------------------------------------------
+[2.Header part]
+--------------------------------------------------*/
+
+header {
+    height: 100px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+header .navbar-brand {
+    color: #2D333F !important;
+    margin: 0;
+    padding: 15px 0;
+    position: absolute;
+    right: 0px;
+    z-index: 22;
+
+    width: 100%;
+    text-align: center
+}
+
+.profile .row.first > div svg {
+    font-size: 10px;
+    margin-left: 10px
+}
+
+.profile .row.first > div div .han a {
+    color: #121212
+}
+
+.profile .row.first > div div .han {
+    margin: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+}
+
+.profile .row.first > div div .han p {
+    margin: 0;
+}
+
+.profile .row.first > div div div {
+    margin-right: 30px
+}
+
+.profile .row > div > div h4 {
+    margin: 20px 0
+}
+
+.profile .row > div > div {
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+
+}
+
+.profile {
+    margin: 50px auto;
+    color: #2D333F
+}
+
+.profile .row:not(.first) .col-xs-12 {
+    margin: 20px 0;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    color: #2D333F
+}
+
+.profile .col-xs-12 {
+    margin: 20px 0;
+}
+
+.profile h3,
+.profile h4 {
+    color: #C5C5C5 !important
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%
+}
+
+.profile .first {
+    margin-bottom: 50px
+}
+
+
+
+.profile .row:not(.first) .col-xs-12 {
+    transition: .3s ease;
+    cursor: pointer
+}
+
+.profile .row:not(.first) .col-xs-12:hover {
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, .1)
+}
+
+.profile .row svg {
+    color: #F0424C;
+    font-size: 30px
+}
+
+.vid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    z-index: 22222;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, .98);
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none
+}
+
+.vid iframe {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    z-index: 22222;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, .98);
+}
+
+.vid .fa-times {
+    color: white;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer
+}
